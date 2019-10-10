@@ -1,0 +1,200 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="180.28309119933488" scrolly="597.7755106156435" scale="0.8227024747918819">
+    <block type="initPreloader" id="2}JM7-fZWcZD)27}0*j|" x="-270" y="-410">
+      <statement name="DO_END">
+        <block type="setHTMLElemStyle" id="z=~54Z8$a/Q71@V*p8GC">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="MiY$WTBaS}U}@X@5##3H">
+              <field name="TEXT">inline</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="jU+H|:eNm@(-Zs,^TrI.">
+              <field name="TEXT">div-btn</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="Main" type="MainTab" active="true" scrollx="343.90294574796496" scrolly="745.9999999999998" scale="1">
+    <block type="callJSFunction" id="]/SnBS]yj9[PM*-2o/3o" disabled="true" x="-250" y="-890">
+      <mutation name="loadContent">
+        <arg name="myObject"></arg>
+      </mutation>
+      <field name="NAME">loadContent</field>
+      <value name="ARG0">
+        <block type="pickedObject" id="i`~P6J30utllutQfmTXP"></block>
+      </value>
+    </block>
+    <block type="whenClicked" id="YR_Q]#~Pgq+o8;u6/UQA" x="-290" y="-810">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="allObjectList" id="$u0Mv]PQxzAoEQ,Ir32q"></block>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="}%^1#5hyqME9$Lg/ykq,">
+          <value name="IF0">
+            <block type="logic_compare" id="!0kT=^6wKmRH05S5U5O+">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="pickedObject" id="BuX#@.+hK~BdJ4GNh/?t"></block>
+              </value>
+              <value name="B">
+                <block type="objectList" id="V-;axHy%)^gTf{R`|:H5">
+                  <field name="FIELDNAME">Sphere</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="loadFile" id="Kn2/?Q2x{-pOPa/23uk7">
+              <value name="URL">
+                <shadow type="text" id="Lng,WP1IENLK3Ea:.$ya">
+                  <field name="TEXT">./test.txt</field>
+                </shadow>
+                <block type="text" id="ACAHCVNDxkW=Lt|*ipNW">
+                  <field name="TEXT">shell/dscrptn_text/sphere-description.txt</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="callJSFunction" id="!s4=}F)9zB*kzj$w!oc@">
+                  <mutation name="loadAlert">
+                    <arg name="txt"></arg>
+                  </mutation>
+                  <field name="NAME">loadAlert</field>
+                  <value name="ARG0">
+                    <block type="loadedFile" id="6txB%N+OujDhCy5NwYV4"></block>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </statement>
+          <next>
+            <block type="controls_if" id="M5/g6ER:ma3Qco/8a@KZ">
+              <value name="IF0">
+                <block type="logic_compare" id="#oij9P=m7hXf%=uIhSre">
+                  <field name="OP">EQ</field>
+                  <value name="A">
+                    <block type="pickedObject" id=")ST97YD_jf`ete5xC_gG"></block>
+                  </value>
+                  <value name="B">
+                    <block type="objectList" id="TXX7]IGQEfucUZid]wCx">
+                      <field name="FIELDNAME">Cone</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO0">
+                <block type="loadFile" id="L8_EuqrrCbYc!ei/=SfE">
+                  <value name="URL">
+                    <shadow type="text" id="Lng,WP1IENLK3Ea:.$ya">
+                      <field name="TEXT">./test.txt</field>
+                    </shadow>
+                    <block type="text" id="T%]@TWp/;Stvd(_ZoN7s">
+                      <field name="TEXT">shell/dscrptn_text/cone-description.txt</field>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="callJSFunction" id="I=CN#+]Vlq^g]mQbVr`G">
+                      <mutation name="loadAlert">
+                        <arg name="txt"></arg>
+                      </mutation>
+                      <field name="NAME">loadAlert</field>
+                      <value name="ARG0">
+                        <block type="loadedFile" id="Ksp0=P+Ot=,?bpCgZq)T"></block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </statement>
+              <next>
+                <block type="controls_if" id="l~`k)0Y/eVXm?~`dWt!h">
+                  <value name="IF0">
+                    <block type="logic_compare" id="5(/FLX~pby`j0}uJ$~,v">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="pickedObject" id="iH^FIl+m_(@20hvt4,r2"></block>
+                      </value>
+                      <value name="B">
+                        <block type="objectList" id="d3+sQK`Rzd`~pXadUJ2?">
+                          <field name="FIELDNAME">Cube</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO0">
+                    <block type="loadFile" id="Ml,o+e=piFQdw_2x!2vt">
+                      <value name="URL">
+                        <shadow type="text" id="Lng,WP1IENLK3Ea:.$ya">
+                          <field name="TEXT">./test.txt</field>
+                        </shadow>
+                        <block type="text" id="?GiI%mO}.Zb{_2Rc?gP*">
+                          <field name="TEXT">shell/dscrptn_text/cube-description.txt</field>
+                        </block>
+                      </value>
+                      <statement name="DO">
+                        <block type="callJSFunction" id="/!#0hO*VVBS7Z5tLW|Uh">
+                          <mutation name="loadAlert">
+                            <arg name="txt"></arg>
+                          </mutation>
+                          <field name="NAME">loadAlert</field>
+                          <value name="ARG0">
+                            <block type="loadedFile" id="F5T9il^KL4}lSVe8.}~u"></block>
+                          </value>
+                        </block>
+                      </statement>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="procedures_defnoreturn" id="{t,j1iO~]){zf%K[#_)?" disabled="true" x="-290" y="-330">
+      <field name="NAME">dscrptn</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="loadFile" id="$7C,w*n!,IHC:we7n%+J">
+          <value name="URL">
+            <shadow type="text" id="Lng,WP1IENLK3Ea:.$ya">
+              <field name="TEXT">./test.txt</field>
+            </shadow>
+            <block type="text" id="n5tyZyF$Wk{};qI;LD|`">
+              <field name="TEXT">shell/dscrptn_text/main-description.txt</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="callJSFunction" id="[i._cGtL$Nql-Pf%-yRI">
+              <mutation name="loadAlert">
+                <arg name="txt"></arg>
+              </mutation>
+              <field name="NAME">loadAlert</field>
+              <value name="ARG0">
+                <block type="loadedFile" id="ihf76=#*dDKJ(jy3?:-V"></block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block type="procedures_defnoreturn" id="3?,dY;MkE}c8Xy53}N(O" x="-270" y="-190">
+      <field name="NAME">hide</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="hide" id="TK)0}UcR(PaSSAaUNkYc">
+          <value name="VALUE">
+            <block type="objectList" id="},[?DJPjhDUx+]Jg^4sq">
+              <field name="FIELDNAME">Sphere</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings width="700" height="778"></editorsettings>
+</xml>

@@ -1,0 +1,58 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="180.28309119933488" scrolly="597.7755106156435" scale="0.8227024747918819">
+    <block type="initPreloader" id="2}JM7-fZWcZD)27}0*j|" x="-270" y="-410">
+      <statement name="DO_END">
+        <block type="setHTMLElemStyle" id="z=~54Z8$a/Q71@V*p8GC">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="MiY$WTBaS}U}@X@5##3H">
+              <field name="TEXT">inline</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="jU+H|:eNm@(-Zs,^TrI.">
+              <field name="TEXT">div-btn</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="Main" type="MainTab" active="true" scrollx="346.257843017578" scrolly="962.4191284179685" scale="1">
+    <block type="whenClicked" id="YR_Q]#~Pgq+o8;u6/UQA" disabled="true" x="-290" y="-710">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="allObjectList" id="$u0Mv]PQxzAoEQ,Ir32q"></block>
+      </value>
+      <statement name="DO">
+        <block type="callJSFunction" id="]/SnBS]yj9[PM*-2o/3o">
+          <mutation name="loadContent">
+            <arg name="myObject"></arg>
+          </mutation>
+          <field name="NAME">loadContent</field>
+          <value name="ARG0">
+            <block type="pickedObject" id="i`~P6J30utllutQfmTXP"></block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="loadFile" id="$7C,w*n!,IHC:we7n%+J" x="-290" y="-490">
+      <value name="URL">
+        <shadow type="text" id="Lng,WP1IENLK3Ea:.$ya">
+          <field name="TEXT">./test.txt</field>
+        </shadow>
+        <block type="text" id="n5tyZyF$Wk{};qI;LD|`">
+          <field name="TEXT">test.txt</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="callJSFunction" id="[i._cGtL$Nql-Pf%-yRI">
+          <mutation name="loadAlert"></mutation>
+          <field name="NAME">loadAlert</field>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings width="700" height="778"></editorsettings>
+</xml>

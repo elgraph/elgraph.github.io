@@ -1,0 +1,24 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="true" scrollx="159.68707406875973" scrolly="594.7755106156435" scale="0.8227024747918819">
+    <block type="initPreloader" id="2}JM7-fZWcZD)27}0*j|" x="-270" y="-410">
+      <statement name="DO_END">
+        <block type="setHTMLElemStyle" id="z=~54Z8$a/Q71@V*p8GC">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="MiY$WTBaS}U}@X@5##3H">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="jU+H|:eNm@(-Zs,^TrI.">
+              <field name="TEXT">btn-open-close</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="Main" type="MainTab" active="false" scrollx="293.71113708493874" scrolly="778" scale="0.7462153966366275"></tab>
+  <editorsettings width="700" height="778"></editorsettings>
+</xml>

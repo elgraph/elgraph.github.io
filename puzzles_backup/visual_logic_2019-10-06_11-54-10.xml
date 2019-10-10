@@ -1,0 +1,14 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="true" scrollx="326.3392770027352" scrolly="615.9296874999998" scale="1">
+    <block type="initPreloader" id="2}JM7-fZWcZD)27}0*j|" x="-270" y="-410">
+      <statement name="DO_END">
+        <block type="setHTMLElemStyle" id="z=~54Z8$a/Q71@V*p8GC">
+          <field name="PROPERTY">alignContent</field>
+          <field name="PARENT">FALSE</field>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="Main" type="MainTab" active="false" scrollx="293.71113708493874" scrolly="778" scale="0.7462153966366275"></tab>
+  <editorsettings width="700" height="778"></editorsettings>
+</xml>
