@@ -1,7 +1,7 @@
 ﻿<h2>Деталь "Конус"</h2>
 
 <div class="pl-left">
-<gwd-iframe id="secondFrame" source="http://localhost:8668/applications/Mashine/Mashine.html" style="height: 400px;"></gwd-iframe>
+<gwd-iframe id="secondFrame" source="Mashine.html" style="height: 400px;"></gwd-iframe>
 </div>
 
 <p>ЗИП Конуса<br>
