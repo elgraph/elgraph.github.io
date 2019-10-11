@@ -64,7 +64,7 @@ body {
 }
 </style>
 
- <!-- <script data-source="shell/js/googbase_min.js" data-version="4" data-exports-type="googbase" src="shell/js/googbase_min.js"></script>
+  <script data-source="shell/js/googbase_min.js" data-version="4" data-exports-type="googbase" src="shell/js/googbase_min.js"></script>
   <script data-source="shell/js/gwd_webcomponents_min.js" data-version="6" data-exports-type="gwd_webcomponents" src="shell/js/gwd_webcomponents_min.js"></script>
   <script data-source="shell/js/gwdiframe_min.js" data-version="5" data-exports-type="gwd-iframe" src="shell/js/gwdiframe_min.js"></script>
   <script data-source="shell/js/gwdpage_min.js" data-version="12" data-exports-type="gwd-page" src="shell/js/gwdpage_min.js"></script>
@@ -72,18 +72,18 @@ body {
   <script data-source="shell/js/gwdimagebutton_min.js" data-version="11" data-exports-type="gwd-imagebutton" src="shell/js/gwdimagebutton_min.js"></script>
   <script data-source="shell/js/preloader.js" src="shell/js/preloader.js"></script>
   
-  -->
+  
 </head>
 
 <body class="htmlNoPages">
 	Тест
-  <gwd-iframe id="mainFrame" source="http://localhost:8668/applications/Mashine/Mashine.html" class="gwd-iframe-d0oz"></gwd-iframe>
+  <gwd-iframe id="mainFrame" source="Mashine.html" class="gwd-iframe-d0oz"></gwd-iframe>
   <div class="gwd-div-xtvf" id="div-btn">
 	  <gwd-imagebutton id="btn-open-close" scaling="cover" class="gwd-imagebutton-1yd6" up-image="shell/img/open-close-inact.png" over-image="shell/img/open-close-act.png" down-image="shell/img/open-close-inact.png"></gwd-imagebutton>
 	  <gwd-imagebutton id="btn-dscrpn" up-image="shell/img/dscn_inakt.png" over-image="shell/img/dscn_akt.png" down-image="shell/img/dscn_inakt.png" scaling="cover" class="gwd-imagebutton-1fe5"></gwd-imagebutton>
   </div>
   
-  <!-- Прелоадер  
+  <!-- Прелоадер  -->
     <div class="gwd-div-7sap" id="preloader-div">
     <img src="shell/img/bg.png" id="bg" class="gwd-img-153g">
     <label id="percantage" class="gwd-label-76dh">0%</label>
@@ -94,21 +94,21 @@ body {
       </div>
     </div>
   </div>
--->
-  <!-- Модальное Окно 
+
+  <!-- Модальное Окно -->
     <div id="overlay">
         <div class="popup">
              <div id='content' class="content"></div>
 			<button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
         </div>
     </div>
-   -->
-  <!-- Скрипты 
+   
+  <!-- Скрипты -->
 <script type="text/javascript">
 	function load_content(i) {
 			document.getElementById('overlay').style.display = 'block';
 			document.getElementById('content').innerHTML = i;
 	}
-</script>    -->
+</script>    
 
 </body></html>
