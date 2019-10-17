@@ -1,0 +1,1476 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="true" scrollx="260.63643316141395" scrolly="382.96289495127127" scale="0.8227024747918819">
+    <block type="initSettings" id="%GDOgVn]HX{ON}fB6kF=" x="-230" y="-410">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+    <block type="initPreloader" id="kT)I_zmU2Rm0L`t-DDv%" x="-290" y="-210">
+      <statement name="DO_PROGRESS">
+        <block type="setHTMLElemAttribute" id="X$9MRY`EICo[8)Ir(1m*">
+          <field name="ATTRIBUTE">innerHTML</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text_join" id="!#(QUjw-(V{OZy{GFMaQ">
+              <mutation items="2"></mutation>
+              <value name="ADD0">
+                <block type="percentage" id="5:=,@@1JyY[,isp{StPJ"></block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="zrlhr?w}x}`qT{Rll7Vn">
+                  <field name="TEXT">%</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="hx@x/zAAsc$x2KpEj45o">
+              <field name="TEXT">percantage</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="9wds3phu`_gry(!gc}+B">
+              <field name="PROPERTY">width</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text_join" id="otG?T?s#S`p`3m@YKZ7)">
+                  <mutation items="2"></mutation>
+                  <value name="ADD0">
+                    <block type="percentage" id="p1}ap$y!Y]t4YpU=pPg/"></block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="h[-zO*N}s6)Ovd5A)LJa">
+                      <field name="TEXT">%</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="text" id=")mD0Ck4K(j]!^`nFX[[R">
+                  <field name="TEXT">progress-col</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_END">
+        <block type="setHTMLElemStyle" id="_-RbNj_Ub9#:y:meIz.B">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="pb{_dN7q5`@i.:?7iUM8">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="K4~)OpQdWx[n:%mLZw-Y">
+              <field name="TEXT">preloader-div</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="WZc-4IH4wakIGS($j:pk">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text" id="CKJ!dNz3JCxb:jl=XBw?">
+                  <field name="TEXT">inline</field>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="text" id="~r0:![V?5[X_[VjuC3Go">
+                  <field name="TEXT">div-btn</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="Main" type="MainTab" active="false" scrollx="148.0712188397394" scrolly="-346.6646006317494" scale="0.6768393620286867">
+    <variables>
+      <variable type="" id="_sp]u3+uSA257YNF#g:]">cathead</variable>
+    </variables>
+    <block type="setHTMLElemStyle" id="D=_X*+ft=rtjctpiC*oN" x="-10" y="-590">
+      <field name="PROPERTY">display</field>
+      <field name="PARENT">TRUE</field>
+      <value name="VALUE">
+        <block type="text" id="jF3U+#M7ENB=_QE5nD23">
+          <field name="TEXT">none</field>
+        </block>
+      </value>
+      <value name="ID">
+        <block type="text" id="p)yR]jhLw;~2qRoWF#:H">
+          <field name="TEXT">struct-btn-2</field>
+        </block>
+      </value>
+      <next>
+        <block type="setHTMLElemStyle" id="JE?yQ(?QK9l}fKiQ++*i">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="Z}(J64E!U-D2IsTw`x5a">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="o-Q/xu|,zR1{=$b[n*uv">
+              <field name="TEXT">measurements-btn-2</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="CE,.bg9c}E:3r!]_eFu%">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text" id="hzW}qR}a8ei,8e9}w=4U">
+                  <field name="TEXT">none</field>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="text" id="[J#=qf76v}vuGij;xHjF">
+                  <field name="TEXT">color-btn-2</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block type="variables_set" id="G(y.|L[wY|xt}/c.~@$#" x="-250" y="-450">
+      <field name="VAR" id="_sp]u3+uSA257YNF#g:]" variabletype="">cathead</field>
+      <value name="VALUE">
+        <block type="text" id="P8@$RgHWEwH7NXX30=i)">
+          <field name="TEXT">0</field>
+        </block>
+      </value>
+    </block>
+    <block type="eventHTMLElem" id="arRa96qmM3l0:{jc~A3w" x="-230" y="-370">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="MgxW|j]cxXTkoVom0l[O">
+          <field name="TEXT">dscn-btn</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="loadFile" id="MDwuSo_y1pqNPm,a-D.2">
+          <value name="URL">
+            <shadow type="text" id="ogs9ji]2FZllG+nK1|#I">
+              <field name="TEXT">./mydata.txt</field>
+            </shadow>
+            <block type="text" id="?|h02w*F0bh7D!?a+hTR">
+              <field name="TEXT">shell/dscrptn_text/main-description.txt</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="callJSFunction" id="NW^9N{(_qrv0%)SgIk1L">
+              <mutation name="loadAlert">
+                <arg name="txt"></arg>
+              </mutation>
+              <field name="NAME">loadAlert</field>
+              <value name="ARG0">
+                <block type="loadedFile" id="m2?e@_=C*;=-)$oF4tdq"></block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="!c}c!?}ls_i65$=,lE,U" collapsed="true" x="190" y="-230">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="allObjectList" id="N,vC70O]~GU!9GNxU_vA"></block>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="q/Es0/j9SBBmF,Vq7`Ga">
+          <value name="IF0">
+            <block type="logic_compare" id="-^1%qt]P#nLId6[Rj}zP">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="pickedObject" id=":di_8HuL=JGFD/CK@3,X"></block>
+              </value>
+              <value name="B">
+                <block type="objectList" id="B_N)GT}BO/m{X4bd`.}!">
+                  <field name="FIELDNAME">carriage-hook</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="variables_set" id="#a+;](@xEe@Q.Oq[YS{:">
+              <field name="VAR" id="_sp]u3+uSA257YNF#g:]" variabletype="">cathead</field>
+              <value name="VALUE">
+                <block type="text" id="BmErSw~Jgm0%G6DM[mdL">
+                  <field name="TEXT">1</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="controls_if" id="$U-CBda!.V1CMU%[38lj">
+              <value name="IF0">
+                <block type="logic_compare" id="oa!~z2lMerj,R;0]z4yE">
+                  <field name="OP">EQ</field>
+                  <value name="A">
+                    <block type="pickedObject" id="vVq};PS5Hn#3cuKj5o+}"></block>
+                  </value>
+                  <value name="B">
+                    <block type="objectList" id="Ddr`9r.:QW+vw6}ip]qF">
+                      <field name="FIELDNAME">carriage-motor-1</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO0">
+                <block type="variables_set" id="EEjvgNgf8BY}|E8^w3CI">
+                  <field name="VAR" id="_sp]u3+uSA257YNF#g:]" variabletype="">cathead</field>
+                  <value name="VALUE">
+                    <block type="text" id="+bqx*=)igK*78kjnW?G[">
+                      <field name="TEXT">1</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="controls_if" id="HNq`GsWOjo,R6ql8AN~m">
+                  <value name="IF0">
+                    <block type="logic_compare" id="0N8+:=VRi1S]Q=d8ZG3D">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="pickedObject" id="!DHoH}-@K7L}6A_EhX6E"></block>
+                      </value>
+                      <value name="B">
+                        <block type="objectList" id="U06wgD.k)]+jq0XtenzK">
+                          <field name="FIELDNAME">carriage-motor-2</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO0">
+                    <block type="variables_set" id="w=3#/xf1/M]!?.Xw,Wyg">
+                      <field name="VAR" id="_sp]u3+uSA257YNF#g:]" variabletype="">cathead</field>
+                      <value name="VALUE">
+                        <block type="text" id="Tq8V?9=VUT#Sbq*OUpbn">
+                          <field name="TEXT">1</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="controls_if" id="^.ciacFanZFpuwqj#2Z0">
+                      <value name="IF0">
+                        <block type="logic_compare" id="nH|6JTTC!S74Ie;*s7?{">
+                          <field name="OP">EQ</field>
+                          <value name="A">
+                            <block type="pickedObject" id="RU6=OS$ye,sL~2)2[4*,"></block>
+                          </value>
+                          <value name="B">
+                            <block type="objectList" id="uhYoO3]_!6q1i9czo]Y(">
+                              <field name="FIELDNAME">carriage-tail</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <statement name="DO0">
+                        <block type="variables_set" id="%$eml^N3L3mB`!]s_EVQ">
+                          <field name="VAR" id="_sp]u3+uSA257YNF#g:]" variabletype="">cathead</field>
+                          <value name="VALUE">
+                            <block type="text" id="p#Y?=s#ZlEjVw3v9h:a$">
+                              <field name="TEXT">1</field>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="controls_if" id="Fh2-OBu;6BK@}AYtm@^i">
+                          <value name="IF0">
+                            <block type="logic_compare" id="gsN0{r3;nj8;hIYgJfx9">
+                              <field name="OP">EQ</field>
+                              <value name="A">
+                                <block type="pickedObject" id="oC|]ziZR4K?d|F}%LKNp"></block>
+                              </value>
+                              <value name="B">
+                                <block type="objectList" id=":6%j_EehK6_(_M1r@vpE">
+                                  <field name="FIELDNAME">carriage-winch</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <statement name="DO0">
+                            <block type="variables_set" id="7RsS+vmk+*1dfZU[87u8">
+                              <field name="VAR" id="_sp]u3+uSA257YNF#g:]" variabletype="">cathead</field>
+                              <value name="VALUE">
+                                <block type="text" id="c=.#V?{]n2W]Ghk}:l:]">
+                                  <field name="TEXT">1</field>
+                                </block>
+                              </value>
+                            </block>
+                          </statement>
+                          <next>
+                            <block type="controls_if" id="*U_a_Z;2[_#m;c2:jgQW">
+                              <value name="IF0">
+                                <block type="logic_compare" id="%5!%cI3B`]kA1AhB:-qQ">
+                                  <field name="OP">EQ</field>
+                                  <value name="A">
+                                    <block type="pickedObject" id="s8I@4E54Ks.b=Z3ON[r*"></block>
+                                  </value>
+                                  <value name="B">
+                                    <block type="objectList" id="9_e*,U0aIw0gMc$^sZ{d">
+                                      <field name="FIELDNAME">cathead-beam</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <statement name="DO0">
+                                <block type="variables_set" id="HUV{d_gsiBck*@u6LJ6S">
+                                  <field name="VAR" id="_sp]u3+uSA257YNF#g:]" variabletype="">cathead</field>
+                                  <value name="VALUE">
+                                    <block type="text" id="CiEy,Egy2!PITZpr;u4r">
+                                      <field name="TEXT">1</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </statement>
+                              <next>
+                                <block type="controls_if" id="2(nOl0%vzcu9JX{7Wl]l">
+                                  <value name="IF0">
+                                    <block type="logic_compare" id="Ti9;_2GG5**r|Z)lJu@a">
+                                      <field name="OP">EQ</field>
+                                      <value name="A">
+                                        <block type="pickedObject" id="an5hok*Q*pPIr#g;a[UI"></block>
+                                      </value>
+                                      <value name="B">
+                                        <block type="objectList" id=":vMam5vPF;eukut4~i^*">
+                                          <field name="FIELDNAME">cathead-motor</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <statement name="DO0">
+                                    <block type="variables_set" id="FmSkueSUz?9ueJ?Z0nCl">
+                                      <field name="VAR" id="_sp]u3+uSA257YNF#g:]" variabletype="">cathead</field>
+                                      <value name="VALUE">
+                                        <block type="text" id="Sa6P(,bJEsmY#{.rl86h">
+                                          <field name="TEXT">1</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </statement>
+                                  <next>
+                                    <block type="controls_if" id="zs/]hl~]3`KP+mS]1zov">
+                                      <value name="IF0">
+                                        <block type="logic_compare" id="fj%rqvilEUcI_bZs,ghy">
+                                          <field name="OP">EQ</field>
+                                          <value name="A">
+                                            <block type="pickedObject" id=";@d,5%3Y68pc?Gl(pvHX"></block>
+                                          </value>
+                                          <value name="B">
+                                            <block type="objectList" id="~mMmQK#WH2LrUzg%v/-?">
+                                              <field name="FIELDNAME">cathead-opora</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <statement name="DO0">
+                                        <block type="variables_set" id="zjr]y}_mNXUbN]@$GNP3">
+                                          <field name="VAR" id="_sp]u3+uSA257YNF#g:]" variabletype="">cathead</field>
+                                          <value name="VALUE">
+                                            <block type="text" id="F8ok6j?u(Sx2R1_W{r$`">
+                                              <field name="TEXT">1</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </statement>
+                                      <next>
+                                        <block type="controls_if" id="#C,D(KT?kp}8{5VIs?t_">
+                                          <value name="IF0">
+                                            <block type="logic_compare" id="(+Vg12N{`3WaK76)N2x+">
+                                              <field name="OP">EQ</field>
+                                              <value name="A">
+                                                <block type="pickedObject" id="Mr_,y;@p!H%Q[p3]8loe"></block>
+                                              </value>
+                                              <value name="B">
+                                                <block type="objectList" id="k%@q!o)7ruAgNC/fbU^8">
+                                                  <field name="FIELDNAME">cathead-spacer</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </value>
+                                          <statement name="DO0">
+                                            <block type="variables_set" id="7VxBzMBGn[JG0bK{frfD">
+                                              <field name="VAR" id="_sp]u3+uSA257YNF#g:]" variabletype="">cathead</field>
+                                              <value name="VALUE">
+                                                <block type="text" id="w~15?8._qmec7q)u4YJz">
+                                                  <field name="TEXT">1</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </statement>
+                                          <next>
+                                            <block type="controls_if" id="]LpZ`U0l0GZ8J7]kO,G1">
+                                              <value name="IF0">
+                                                <block type="logic_compare" id="3lk%ZTNk~On8qV!xm`Lw">
+                                                  <field name="OP">EQ</field>
+                                                  <value name="A">
+                                                    <block type="variables_get" id="3};]vq-qib+}^r0nT9rO">
+                                                      <field name="VAR" id="_sp]u3+uSA257YNF#g:]" variabletype="">cathead</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="B">
+                                                    <block type="text" id="7~vvf_`bWe%=;_`tkN`+">
+                                                      <field name="TEXT">1</field>
+                                                    </block>
+                                                  </value>
+                                                </block>
+                                              </value>
+                                              <statement name="DO0">
+                                                <block type="variables_set" id=",sn]-ViY*BYzqsO/;3,1">
+                                                  <field name="VAR" id="_sp]u3+uSA257YNF#g:]" variabletype="">cathead</field>
+                                                  <value name="VALUE">
+                                                    <block type="text" id=",[zsQOHi_axY].qf]wcp">
+                                                      <field name="TEXT">0</field>
+                                                    </block>
+                                                  </value>
+                                                  <next>
+                                                    <block type="loadFile" id="x{:}?CVfVUA4eTN#m@{@">
+                                                      <value name="URL">
+                                                        <shadow type="text" id="ogs9ji]2FZllG+nK1|#I">
+                                                          <field name="TEXT">./mydata.txt</field>
+                                                        </shadow>
+                                                        <block type="text" id="6E)%^#!rQmq{.(H!Y)WV">
+                                                          <field name="TEXT">shell/dscrptn_text/kran-balka-description.txt</field>
+                                                        </block>
+                                                      </value>
+                                                      <statement name="DO">
+                                                        <block type="callJSFunction" id=",xZgX]R?z2/L8|iU}}h6">
+                                                          <mutation name="loadAlert">
+                                                            <arg name="txt"></arg>
+                                                          </mutation>
+                                                          <field name="NAME">loadAlert</field>
+                                                          <value name="ARG0">
+                                                            <block type="loadedFile" id="2:i0[~ijm(Vbv0-KFsur"></block>
+                                                          </value>
+                                                        </block>
+                                                      </statement>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </statement>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="48D!41XKrtSng{0{xmt*" x="-230" y="-190">
+      <value name="VALUE">
+        <block type="groupList" id="70O]uIi}J|:ft0T)G(i)">
+          <field name="FIELDNAME">cathead</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="Y|fi5Z8b7Y2D{(NWEcZm">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="groupList" id="LjljkAvt?F#GDn)TK3Gd">
+              <field name="FIELDNAME">cathead</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="Zp=#AnUB)lVJS!a*qQ!f">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="groupList" id="]{,uakFX}uuc90N;PB$!">
+              <field name="FIELDNAME">cathead</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="@^/GR5#Ug`0]!n)X/[Ba" x="-210" y="-30">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="?MwX3w6Ty~Z3@cm~HS[I">
+          <field name="TEXT">measurements-btn-1</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setHTMLElemStyle" id="O6)+ix!o_|6?$nPD-v1w">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="v.84qv^.s_V1riMePY42">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id=".:~;M5I^E(RKe~qzBj@%">
+              <field name="TEXT">measurements-btn-1</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="b0]JxLN:UfW.@(aU^[XN">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text" id="G$aD.~SMf5|pj*JlpVCZ">
+                  <field name="TEXT">inline</field>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="text" id="].KO`hGS/2a(ZfOy8}/d">
+                  <field name="TEXT">measurements-btn-2</field>
+                </block>
+              </value>
+              <next>
+                <block type="hide" id="!Za]{SeYN[^^Dge7z-n$">
+                  <value name="VALUE">
+                    <block type="groupList" id="Ho9I(Mtlc+_)EWf)3vb]">
+                      <field name="FIELDNAME">floor</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="show" id="2V#qGb8r?|?/V{mF/F3E">
+                      <value name="VALUE">
+                        <block type="objectList" id="`[#I{y.[gcI,RgK_2ZzB">
+                          <field name="FIELDNAME">floor</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="show" id="6ebi|}LPX}$lmK@V=GN*">
+                          <value name="VALUE">
+                            <block type="groupList" id="8ZI-WI8SLK.8EOlD66*[">
+                              <field name="FIELDNAME">dimensions</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="VeZ!Y}De?@F2POXCbNsN" x="-210" y="230">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="0+59!I{@QR~D1ycwf36m">
+          <field name="TEXT">measurements-btn-2</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setHTMLElemStyle" id="ey+hJDBnb@~|5+tQM9;w">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="qmt^j_tte!^l2xor[^O~">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id=",z1DLE,D:wO$^q)I,`W=">
+              <field name="TEXT">measurements-btn-2</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="[;7!Mw)4JXEJ;!~{dIiZ">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text" id="DD$4?D!E$;yFDEI/QjG:">
+                  <field name="TEXT">inline</field>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="text" id="cMX@C:Zg2:s!0t|Qw$Zi">
+                  <field name="TEXT">measurements-btn-1</field>
+                </block>
+              </value>
+              <next>
+                <block type="hide" id="bNh9?s8s0Iw7%3KFkNli">
+                  <value name="VALUE">
+                    <block type="groupList" id="ss%SX$p$_FRO]B_$K3p-">
+                      <field name="FIELDNAME">dimensions</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="show" id="]ZL.XvY@SUX;|ZN(RW1p">
+                      <value name="VALUE">
+                        <block type="groupList" id="I^w#)2BACn:f`#RGVRWg">
+                          <field name="FIELDNAME">floor</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="95Y,}lotxV8XmYYue$Mt" collapsed="true" x="-210" y="430">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="mZnl1o3wfz_SQ}nG}*U~">
+          <field name="TEXT">struct-btn-1</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setHTMLElemStyle" id="vmlSmV~jkl905#kbapr`">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="HF[`V0mVE-=Osp!4j`7P">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="vT)A+L7ki8DX-gV8}Hfc">
+              <field name="TEXT">struct-btn-1</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="nBAX-upocpLF0~xXeDjf">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text" id="WP}pX=ZY%nA=6%iu1;j9">
+                  <field name="TEXT">inline</field>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="text" id="1Zd7SV|edPrA5N}OK{,W">
+                  <field name="TEXT">struct-btn-2</field>
+                </block>
+              </value>
+              <next>
+                <block type="hide" id="1Usp#*fQ]]~p_2ob/p-G">
+                  <value name="VALUE">
+                    <block type="groupList" id="^prwM}`93G[Fyu|_Z5Nj">
+                      <field name="FIELDNAME">roof</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="hide" id="m$6?(LQ}GL`I$kfl__2w">
+                      <value name="VALUE">
+                        <block type="groupList" id=":q,yDI5W.xfGD9Jp~.[W">
+                          <field name="FIELDNAME">wall</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="hide" id="A6;(CeUkSS5;U%3l]Cs-">
+                          <value name="VALUE">
+                            <block type="groupList" id="/t}Be~t|(.G7hfpq?!qO">
+                              <field name="FIELDNAME">gate</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="hide" id="BRPI+_rA@PE8:ffP8,46">
+                              <value name="VALUE">
+                                <block type="groupList" id="y6h:elpy}_vTCR#-9L0V">
+                                  <field name="FIELDNAME">cars</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="hide" id="xhV3RVpPDGh%r!VR!9-4">
+                                  <value name="VALUE">
+                                    <block type="groupList" id="yTW}g6)#r1xl/zY`$N:/">
+                                      <field name="FIELDNAME">gutter</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="hide" id="%e@QOyK%@QZI+G}=#A,(">
+                                      <value name="VALUE">
+                                        <block type="groupList" id="]d_Hf7vZ3umNYBF[I9H,">
+                                          <field name="FIELDNAME">pad</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="hide" id="OonC]U(~6.7;iDc+[(f[">
+                                          <value name="VALUE">
+                                            <block type="groupList" id=".`~HZ6.A$P;c[Wb{aQde">
+                                              <field name="FIELDNAME">window</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="JH19MiT~xBHUK(2rlm*h" x="-210" y="510">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="QBp#7?yB=Eo|UC-~p[YD">
+          <field name="TEXT">struct-btn-2</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setHTMLElemStyle" id="w{TU!+`i!#)Av72yL_:~">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="p8,MXYSjmkzeX]H*.eX~">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="QHK9q#Qw7iti]+Uf(h_S">
+              <field name="TEXT">struct-btn-2</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="CzT#}nBK,;??-y?+cGHn">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text" id="lP~^5bPIc/,gcoEITqPt">
+                  <field name="TEXT">inline</field>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="text" id="eue3K5xp0IuKOMMnc46D">
+                  <field name="TEXT">struct-btn-1</field>
+                </block>
+              </value>
+              <next>
+                <block type="show" id="mFI86.Yzp/9E4fh!ZJv+">
+                  <value name="VALUE">
+                    <block type="groupList" id="}@;txXEP+x{^ost1FWKi">
+                      <field name="FIELDNAME">roof</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="show" id="%S@T@FXa107F;)y@9/wY">
+                      <value name="VALUE">
+                        <block type="groupList" id="FSv{GObHBIKw%-tNm!B)">
+                          <field name="FIELDNAME">wall</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="show" id="dbi1UwgjmBFzy*I@a?WS">
+                          <value name="VALUE">
+                            <block type="groupList" id=";yKX7NP;~t^_#u5%+{2$">
+                              <field name="FIELDNAME">gate</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="show" id="znL.?!RMi6!vekOg+|I:">
+                              <value name="VALUE">
+                                <block type="groupList" id="94e^~C@e_^riEu==E_A*">
+                                  <field name="FIELDNAME">cars</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="show" id="zVwr?ewL[A@+sD41iHV9">
+                                  <value name="VALUE">
+                                    <block type="groupList" id="^m!wj0LCiQ)DPGU9eVhP">
+                                      <field name="FIELDNAME">gutter</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="show" id="F#a~yN%_zazlN?obD~w=">
+                                      <value name="VALUE">
+                                        <block type="groupList" id="CKK-@!A!dl2~n-YIZEUp">
+                                          <field name="FIELDNAME">pad</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="show" id="(E/x.*.62msL)im}y}Nh">
+                                          <value name="VALUE">
+                                            <block type="groupList" id="D{@-(Q~3MQlKwuJV3yij">
+                                              <field name="FIELDNAME">window</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="sx;Yd2M_^C6*@atL[CAK" x="490" y="490">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="9L3k$1Qr/:f@Wt-j@S[M">
+          <field name="TEXT">color-btn-1</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setHTMLElemStyle" id="K+;|9@+hl0{+i+}f]S+u">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id=".1RJn8g7nl[75L$Lg|Rz">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="e9:_IZq[y62S51aG,t-7">
+              <field name="TEXT">color-btn-1</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="9nK{1-iRwI~yf2=7F[WV">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text" id="A$7xUGt#P0RCnq%ba(z/">
+                  <field name="TEXT">inline</field>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="text" id="-s4=;)g])-TEui`:fo^X">
+                  <field name="TEXT">color-btn-2</field>
+                </block>
+              </value>
+              <next>
+                <block type="setHTMLElemStyle" id="9CcU{o.FAlQbB6rWp5an">
+                  <field name="PROPERTY">display</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="VALUE">
+                    <block type="text" id="C.%ATbHYE9#P!S0!RL`Q">
+                      <field name="TEXT">inline</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <block type="text" id="9:ID),)/;D{+b`7mfzQq">
+                      <field name="TEXT">3020-1014-col-btn</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemStyle" id=")]qa5:#wLB:|-vX/PQ]h">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="VALUE">
+                        <block type="text" id="DSC5MR`aY(O6-6M`+?d=">
+                          <field name="TEXT">inline</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <block type="text" id="?h0[I,x(gH!$S(/EP#Kr">
+                          <field name="TEXT">5005-9006-col-btn</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id=":ZWUMjW3(CeU|{PZ,_|;" x="490" y="730">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id=":1/*~Ll}jsI;xrz@@Y6*">
+          <field name="TEXT">color-btn-2</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setHTMLElemStyle" id=":x8jP4s+#kQHfr,cD$h0">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="7J1H)y=xh,@mN%K1Z^)i">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="?KkG=JX^ZwmqzK-ZJ`qa">
+              <field name="TEXT">color-btn-2</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="0ZWDx{S@?(#6xKHl[]qG">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text" id="a;Nmk{fnl7m#T,TQ^7s.">
+                  <field name="TEXT">inline</field>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="text" id="{-sWuzUyzeIWqCKNWE=-">
+                  <field name="TEXT">color-btn-1</field>
+                </block>
+              </value>
+              <next>
+                <block type="setHTMLElemStyle" id="D}QRdR3pfEVw95pN$L9g">
+                  <field name="PROPERTY">display</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="VALUE">
+                    <block type="text" id="uv4HvR,s)#9a2VC.)T`)">
+                      <field name="TEXT">none</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <block type="text" id="E~bN)$KaO#dKXu.%NDi`">
+                      <field name="TEXT">3020-1014-col-btn</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemStyle" id="hX$9GdiYalFkfy5?ZAIX">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="VALUE">
+                        <block type="text" id="Y;K4a7YW^*MoI`(W1+5r">
+                          <field name="TEXT">none</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <block type="text" id="$`W%=/qtn}N$Y/TyY[./">
+                          <field name="TEXT">5005-9006-col-btn</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id=".s!v=u;9Ej2-VZVT5g|U" x="-210" y="890">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="we]-nA=3*)8V$;8TM!Ea">
+          <field name="TEXT">5005-9006-col-btn</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setHTMLElemStyle" id="mn)Pq2i]BH[tcqUeYnZJ">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="1U;;$B,j#U}E}?#7?K:#">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id=")#CAYs.D7AKDO2FeOL3Z">
+              <field name="TEXT">color-btn-2</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="W}@7.e0giD5nu07bmOiH">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text" id="c^dsxH;fOq4/N#/};n3j">
+                  <field name="TEXT">inline</field>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="text" id=",ovJRg#FfKkDnD*9!*p`">
+                  <field name="TEXT">color-btn-1</field>
+                </block>
+              </value>
+              <next>
+                <block type="setHTMLElemStyle" id="gOG+G?`UMO;d`nnX3mQ.">
+                  <field name="PROPERTY">display</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="VALUE">
+                    <block type="text" id="v/bS7c`R83b,TSh}~{u^">
+                      <field name="TEXT">none</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <block type="text" id="YgUXBX6)7=$qVFGbx]yT">
+                      <field name="TEXT">3020-1014-col-btn</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemStyle" id="p+,vK]1(j`Re)V/~i_jY">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="VALUE">
+                        <block type="text" id="kw[UT$;Zn7]S2d:*yPlY">
+                          <field name="TEXT">none</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <block type="text" id="hn7#jF.6h^~)I/oP-w./">
+                          <field name="TEXT">5005-9006-col-btn</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="1{CdA1%AcYlr|sKKtYYA">
+                          <value name="VALUE2">
+                            <block type="materialList" id="hDK$#jx=OX?cRz?VjOQO">
+                              <field name="FIELDNAME">roof-outside-5005</field>
+                            </block>
+                          </value>
+                          <value name="VALUE1">
+                            <block type="objectList" id="mRLybW;3fv[oa!lt;/xY">
+                              <field name="FIELDNAME">roof</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="lVkn.SkkMDvGgurkN_=_">
+                              <value name="VALUE2">
+                                <block type="materialList" id="uMe}L2wtI~?g8zGbw*4:">
+                                  <field name="FIELDNAME">RAL-5005</field>
+                                </block>
+                              </value>
+                              <value name="VALUE1">
+                                <block type="objectList" id="7YU2n`ndW@hHFEr-PgP;">
+                                  <field name="FIELDNAME">roof_pad_top</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="U)VOC`4}ljdh0;}?ZAB4">
+                                  <value name="VALUE2">
+                                    <block type="materialList" id="jWw[1h,hbtPznZ85{L.M">
+                                      <field name="FIELDNAME">RAL-5005</field>
+                                    </block>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <block type="objectList" id="0].~`2+%{!rH3h_w|%+.">
+                                      <field name="FIELDNAME">roof_pad_f-b</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="assignMaterial" id="Xy$t~8:!ZDc8=xZNJliZ">
+                                      <value name="VALUE2">
+                                        <block type="materialList" id="=lr+#*+rL:k(u*`G6(dW">
+                                          <field name="FIELDNAME">RAL-5005</field>
+                                        </block>
+                                      </value>
+                                      <value name="VALUE1">
+                                        <block type="objectList" id="IlpT#E9C[jYCc_VLs7WP">
+                                          <field name="FIELDNAME">roof_pad_r-l</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="assignMaterial" id="2PWxW)Iy2,PsB6.We-EF">
+                                          <value name="VALUE2">
+                                            <block type="materialList" id="zTFn]}tI2AKni`cBC6d$">
+                                              <field name="FIELDNAME">RAL-5005</field>
+                                            </block>
+                                          </value>
+                                          <value name="VALUE1">
+                                            <block type="objectList" id="[vqVlH!l8Fh@R|Gn?9@)">
+                                              <field name="FIELDNAME">snow_retainer</field>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="assignMaterial" id="0Ce)VLJTm7z#ty[+?T~s">
+                                              <value name="VALUE2">
+                                                <block type="materialList" id="7u#]e{7=ddh@5y|+c;Zw">
+                                                  <field name="FIELDNAME">wall-outside-9006</field>
+                                                </block>
+                                              </value>
+                                              <value name="VALUE1">
+                                                <block type="objectList" id="KrLY^M+*=,TI{1[fl?iU">
+                                                  <field name="FIELDNAME">wall-outside</field>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="assignMaterial" id="g,#zzxv{?^IrE-D3b9v=">
+                                                  <value name="VALUE2">
+                                                    <block type="materialList" id="F%e6{G4L}PK1_4G02+Dn">
+                                                      <field name="FIELDNAME">RAL-9006</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="VALUE1">
+                                                    <block type="objectList" id=":Aewn!nFBB*k%fR$Ug{}">
+                                                      <field name="FIELDNAME">wall_pad-edge</field>
+                                                    </block>
+                                                  </value>
+                                                  <next>
+                                                    <block type="assignMaterial" id="ANN_YH#wS[xP/pM*?e@f">
+                                                      <value name="VALUE2">
+                                                        <block type="materialList" id="n_udroC*I0bt,r|KEGW%">
+                                                          <field name="FIELDNAME">RAL-9006</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="VALUE1">
+                                                        <block type="objectList" id="_Us@gn9%w*QFCf_)F|C1">
+                                                          <field name="FIELDNAME">wall_pad-f-b</field>
+                                                        </block>
+                                                      </value>
+                                                      <next>
+                                                        <block type="assignMaterial" id="U0uFiIy`Y+7As#_[Q.mb">
+                                                          <value name="VALUE2">
+                                                            <block type="materialList" id="wJHMHdzjNDv`xz1-ua0Z">
+                                                              <field name="FIELDNAME">RAL-9006</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="VALUE1">
+                                                            <block type="objectList" id="*Ir~*)ha*,KfGf$v8WSp">
+                                                              <field name="FIELDNAME">wall_pad-r-l</field>
+                                                            </block>
+                                                          </value>
+                                                          <next>
+                                                            <block type="assignMaterial" id="(9,j*ASq~/qW|/Ni^ZiU">
+                                                              <value name="VALUE2">
+                                                                <block type="materialList" id="kFqEJo:c.W9${4Aceeu|">
+                                                                  <field name="FIELDNAME">RAL-9006</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="VALUE1">
+                                                                <block type="objectList" id="%8{(-24eK8=RHLm$3m);">
+                                                                  <field name="FIELDNAME">window-pad</field>
+                                                                </block>
+                                                              </value>
+                                                              <next>
+                                                                <block type="assignMaterial" id="lFmfQQ(MRc!]|)]%xL:$">
+                                                                  <value name="VALUE2">
+                                                                    <block type="materialList" id="8-Lu;~EQ^iI#kN?exl:?">
+                                                                      <field name="FIELDNAME">RAL-9006</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <value name="VALUE1">
+                                                                    <block type="objectList" id="ntAy2;mrB3dDVKYQXTr0">
+                                                                      <field name="FIELDNAME">base_pad</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <next>
+                                                                    <block type="assignMaterial" id="m?rfGO[6gXH]uDk`_vpK">
+                                                                      <value name="VALUE2">
+                                                                        <block type="materialList" id="Vl7?%[(*+!Agf?50ODyH">
+                                                                          <field name="FIELDNAME">RAL-9006</field>
+                                                                        </block>
+                                                                      </value>
+                                                                      <value name="VALUE1">
+                                                                        <block type="objectList" id="{_@|eZ^V,a4;l$nb?H8e">
+                                                                          <field name="FIELDNAME">border-gate</field>
+                                                                        </block>
+                                                                      </value>
+                                                                    </block>
+                                                                  </next>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </next>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="3a!4)A*NTK18r(;K_Qkc" x="470" y="1130">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id=":Fy[Brgp/!lU%b22AhqX">
+          <field name="TEXT">3020-1014-col-btn</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setHTMLElemStyle" id="/M{jb}^/UTxkG-k3g=*U">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="+70p_MUf_stg(c}XxLSx">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="NV$#Ga):]VNH6=wO;zDx">
+              <field name="TEXT">color-btn-2</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="Bll}4(n[W=s?QehwcLxg">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text" id="n@*y-@sl.E!~,zPIZNY$">
+                  <field name="TEXT">inline</field>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="text" id="0z07uNTq,hc:}tv$6AbT">
+                  <field name="TEXT">color-btn-1</field>
+                </block>
+              </value>
+              <next>
+                <block type="setHTMLElemStyle" id="tq1uhBMTbVs2CxQuhS?6">
+                  <field name="PROPERTY">display</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="VALUE">
+                    <block type="text" id="%MV=i)FTYgwS)ikom34j">
+                      <field name="TEXT">none</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <block type="text" id="Tyucqw)mma9Q3oU5n:0e">
+                      <field name="TEXT">3020-1014-col-btn</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemStyle" id="6--GRktkc)bR+9q~yHFX">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="VALUE">
+                        <block type="text" id="Qq2W=tFlf%x#v_fyZGPx">
+                          <field name="TEXT">none</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <block type="text" id="^[NUmqCDsTQjF5c:J0YV">
+                          <field name="TEXT">5005-9006-col-btn</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="4ry_|L=Q-`ucO7Oksz~.">
+                          <value name="VALUE2">
+                            <block type="materialList" id="PmmAFJ{$,oisT;~D6`+1">
+                              <field name="FIELDNAME">roof-outside-3020</field>
+                            </block>
+                          </value>
+                          <value name="VALUE1">
+                            <block type="objectList" id="=norUM(oE0nR7i!Lm)4Z">
+                              <field name="FIELDNAME">roof</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="vcbn0J:Av;g=JYJ`pe`U">
+                              <value name="VALUE2">
+                                <block type="materialList" id="z7zVQcf/#XysgAI34|g~">
+                                  <field name="FIELDNAME">RAL-3020</field>
+                                </block>
+                              </value>
+                              <value name="VALUE1">
+                                <block type="objectList" id="@!,Ok?@uEqGslKJyq/*J">
+                                  <field name="FIELDNAME">roof_pad_top</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="pvH!Ds0L%fJWA3JXhcYv">
+                                  <value name="VALUE2">
+                                    <block type="materialList" id="X56a)q[_0n2Ts@BcaHv*">
+                                      <field name="FIELDNAME">RAL-3020</field>
+                                    </block>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <block type="objectList" id="kAxsSe!QU+V(Tg~Xt,[%">
+                                      <field name="FIELDNAME">roof_pad_f-b</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="assignMaterial" id=":h]t.XiPpC,H4XHl:49z">
+                                      <value name="VALUE2">
+                                        <block type="materialList" id="Q.j+/Fm1~RH^Pn~^2H[4">
+                                          <field name="FIELDNAME">RAL-3020</field>
+                                        </block>
+                                      </value>
+                                      <value name="VALUE1">
+                                        <block type="objectList" id="(2C*Xq~a/V$rxgru^-fm">
+                                          <field name="FIELDNAME">roof_pad_r-l</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="assignMaterial" id="%r1q|bBY%gTqFwdf6dZ/">
+                                          <value name="VALUE2">
+                                            <block type="materialList" id="wRA:XL5eX+)8:E7N:C76">
+                                              <field name="FIELDNAME">RAL-3020</field>
+                                            </block>
+                                          </value>
+                                          <value name="VALUE1">
+                                            <block type="objectList" id=":r!D^9!aXom2OteC{Er2">
+                                              <field name="FIELDNAME">snow_retainer</field>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="assignMaterial" id="WR=7:8^UMvuQ6gH]`xw{">
+                                              <value name="VALUE2">
+                                                <block type="materialList" id="j3WV}JU;WL1WNBO[{~r/">
+                                                  <field name="FIELDNAME">wall-outside-1014</field>
+                                                </block>
+                                              </value>
+                                              <value name="VALUE1">
+                                                <block type="objectList" id="aBwBpyM[-hl.Ba.]9g1S">
+                                                  <field name="FIELDNAME">wall-outside</field>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="assignMaterial" id=".GK*Cl+hz|?yWrXobw+}">
+                                                  <value name="VALUE2">
+                                                    <block type="materialList" id="9HJgB+%Q`5`53m/Np-q5">
+                                                      <field name="FIELDNAME">RAL-8017</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="VALUE1">
+                                                    <block type="objectList" id="y_842J{_T*VpgnuGBny[">
+                                                      <field name="FIELDNAME">wall_pad-edge</field>
+                                                    </block>
+                                                  </value>
+                                                  <next>
+                                                    <block type="assignMaterial" id="rMRT9/}J~?`DJyky4G):">
+                                                      <value name="VALUE2">
+                                                        <block type="materialList" id="aahuOY(?vi%5n_m.,rVc">
+                                                          <field name="FIELDNAME">RAL-8017</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="VALUE1">
+                                                        <block type="objectList" id="m0$9Ztqs_m}y,et+G](;">
+                                                          <field name="FIELDNAME">wall_pad-f-b</field>
+                                                        </block>
+                                                      </value>
+                                                      <next>
+                                                        <block type="assignMaterial" id="`Jna4xX|CqKAUHoLIvu;">
+                                                          <value name="VALUE2">
+                                                            <block type="materialList" id="^`^DM!|V4?_rQjkVd#Ss">
+                                                              <field name="FIELDNAME">RAL-8017</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="VALUE1">
+                                                            <block type="objectList" id="j8x_o6Z0S#Rct:c4D%0F">
+                                                              <field name="FIELDNAME">wall_pad-r-l</field>
+                                                            </block>
+                                                          </value>
+                                                          <next>
+                                                            <block type="assignMaterial" id="%m-~rG8uJj5vcBZ.kqGt">
+                                                              <value name="VALUE2">
+                                                                <block type="materialList" id="K-|%D+4aOdmL1xXla5Mx">
+                                                                  <field name="FIELDNAME">RAL-8017</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="VALUE1">
+                                                                <block type="objectList" id="?@p(GT;r}J9N8X+l6HI-">
+                                                                  <field name="FIELDNAME">window-pad</field>
+                                                                </block>
+                                                              </value>
+                                                              <next>
+                                                                <block type="assignMaterial" id="zf`qEtbKwCZ]yNR6=PN1">
+                                                                  <value name="VALUE2">
+                                                                    <block type="materialList" id="5P$X9(MF|Yt)8dJ#5Eu%">
+                                                                      <field name="FIELDNAME">RAL-8017</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <value name="VALUE1">
+                                                                    <block type="objectList" id="VM[,;.r@{$tc0cu@1U7y">
+                                                                      <field name="FIELDNAME">base_pad</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <next>
+                                                                    <block type="assignMaterial" id=";?J(c)YA$u@?w^.iM9Q4">
+                                                                      <value name="VALUE2">
+                                                                        <block type="materialList" id="[:a/#w,tJANWh*{0?^SH">
+                                                                          <field name="FIELDNAME">RAL-8017</field>
+                                                                        </block>
+                                                                      </value>
+                                                                      <value name="VALUE1">
+                                                                        <block type="objectList" id="f3`mOU[y3jaM=fsVR18X">
+                                                                          <field name="FIELDNAME">border-gate</field>
+                                                                        </block>
+                                                                      </value>
+                                                                    </block>
+                                                                  </next>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </next>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings width="924" height="776"></editorsettings>
+</xml>
